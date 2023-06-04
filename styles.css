@@ -1,0 +1,265 @@
+body {
+    background: #ecd590;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shelf {
+    background-color: #5a3f21;
+    height: 20px;
+    width: 520px;
+    position: relative;
+}
+
+/* clock styles */
+
+.clock {
+    background-color: #E9E6C9;
+    border: 10px solid #5AA668;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: -135px;
+    left: 30px;
+}
+
+.knot {
+    background-color: #9d374f;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.hand {
+    background-color: #47321A;
+    height: 50px;
+    width: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+}
+
+.hour-hand {
+    height: 30px;
+    transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.min-hand {
+    height: 40px;
+    width: 3px;
+    transform: translate(-50%, -100%) rotate(180deg);
+}
+
+.sec-hand {
+    height: 47px;
+    width: 2px;
+    transform: translate(-50%, -100%) rotate(260deg);
+}
+
+.clock-ear-left {
+    background-color: #5AA668;
+    border-radius: 90px 90px 0 0;
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    left: -38px;
+    top: -12px;
+    transform: rotate(-50deg);
+}
+
+.clock-ear-left:after {
+    content: '';
+    background-color: #9d374f;
+    border-radius: 90px 90px 0 0;
+    height: 8px;
+    width: 15px;
+    position: absolute;
+    top: -9px;
+    left: 23px;
+}
+
+.clock-ear-right {
+    background-color: #5AA668;
+    border-radius: 90px 90px 0 0;
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    right: -38px;
+    top: -12px;
+    transform: rotate(50deg);
+}
+
+.clock-ear-right:after {
+    content: '';
+    background-color: #9d374f;
+    border-radius: 90px 90px 0 0;
+    height: 8px;
+    width: 15px;
+    position: absolute;
+    top: -9px;
+    right: 23px;
+}
+
+.clock-foot-left {
+    background-color: #47321A;
+    height: 50px;
+    width: 12px;
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.clock-foot-right {
+    background-color: #47321A;
+    height: 50px;
+    width: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+/* book styles */
+
+.book-1 {
+    background-color: #9d374f;
+    border-radius: 3px;
+    height: 170px;
+    width: 40px;
+    position: absolute;
+    left: 210px;
+    top: -170px;
+}
+
+.book-1:before, .book-2:before, .book-3:before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: #e9e6e9;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.book-1:after, .book-2:after, .book-3:after {
+    content: '';
+    background-color: black;
+    border-radius: 3px;
+    height: 100%;
+    width: 50%;
+    opacity: 0.15;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.book-2 {
+    background-color: #e86830;
+    border-radius: 3px;
+    height: 190px;
+    width: 40px;
+    position: absolute;
+    left: 250px;
+    top: -190px;
+}
+
+.book-3 {
+    background-color: #5AA668;
+    border-radius: 3px;
+    height: 180px;
+    width: 40px;
+    position: absolute;
+    left: 290px;
+    top: -180px;
+}
+
+/* cactus styles */
+
+.cactus {
+    height: 180px;
+    width: 100px;
+    position: absolute;
+    top: -180px;
+    left: 380px;
+}
+
+.pot {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pot-bottom {
+    background-color: #ce4f17;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pot-top {
+    background-color: #a03d12;
+    height: 30%;
+    width: 140%;
+    position: absolute;
+    top: 0;
+    left: -20%;
+}
+.pot-top:after, .pot-bottom:after {
+        content: '';
+        background-color: black;
+        height: 100%;
+        width: 50%;
+        opacity: 0.15;
+        position: absolute;
+        top: 0;
+        right: 0;
+}
+
+.plant-left {
+    background-color: #5AA668;
+    height: 35%;
+    width: 45%;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    border-radius: 50px 50px 0 0;
+}
+
+.plant-right {
+    background-color: #5AA668;
+    height: 50%;
+    width: 45%;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    border-radius: 50px 50px 0 0;
+}
+
+.plant-left:after, .plant-right:after {
+    content: '';
+    background-color: black;
+    border-radius: 50px 0 0 0;
+    height: 75%;
+    width: 50%;
+    opacity: 0.15;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
